@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_home_video_item"
+    android:layout_margin="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.example.lxc.android_video.help.YuanHuImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/video_img"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/lxc2"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/set_video_bottom_controlbar_background"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/video_item_size"
+                android:textColor="@color/white"
+                android:text="播放:"/>
+            <TextView
+                android:id="@+id/Clicking_rate"
+                android:text="50"
+                android:textColor="@color/white"
+                android:textSize="@dimen/video_item_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="评论:"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/video_item_size_left"
+                android:textSize="@dimen/video_item_size"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/comment_number"
+                android:text="50"
+                android:textColor="@color/white"
+                android:textSize="@dimen/video_item_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="00:00"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="5dp"
+                    android:textSize="@dimen/video_item_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_name"
+        android:text="视频名称"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/To_update"
+        android:text="更新至:"
+        android:layout_gravity="left" />
+
+</LinearLayout>

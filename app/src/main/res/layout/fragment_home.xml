@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/home_head_lead">
+
+        <ImageView
+            android:id="@+id/left_guide_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/main_guide_img" />
+
+        <ImageView
+            android:id="@+id/history_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ripple_home_top_img_bg"
+            android:src="@drawable/main_history_img" />
+        <!--background是系统自带的水波纹-->
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ripple_home_top_img_bg"
+            android:layout_toLeftOf="@+id/history_img"
+            android:src="@drawable/main_search_img" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view_line_color"></View>
+
+    <include layout="@layout/fragment_home_main"></include>
+
+</LinearLayout>

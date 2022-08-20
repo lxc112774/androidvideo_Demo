@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--点击按钮背景 -->
+    <!--点击的变化-->
+    <!--<item-->
+        <!--android:state_pressed="true">-->
+        <!--<shape>-->
+            <!--&lt;!&ndash;  控制内部颜色变化&ndash;&gt;-->
+            <!--<gradient-->
+                <!--android:startColor="#fff"-->
+                <!--android:endColor="#fff"/>-->
+
+            <!--&lt;!&ndash;  设置圆角&ndash;&gt;-->
+            <!--&lt;!&ndash;<corners-->
+                <!--android:topLeftRadius="10dp"-->
+                <!--android:topRightRadius="10dp"-->
+                <!--android:bottomLeftRadius="10dp"-->
+                <!--android:bottomRightRadius="10dp"/>&ndash;&gt;-->
+            <!--<corners android:radius="200dp" />-->
+
+            <!--&lt;!&ndash;  控制线框颜色和宽度&ndash;&gt;-->
+            <!--<stroke-->
+                <!--android:width="0.5dp"-->
+                <!--android:color="#e9969b"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+
+    <!--点击前-->
+    <item>
+        <shape>
+            <!--  控制内部颜色从左向右变化-->
+           <!-- <gradient
+                android:startColor="#fff"
+                android:endColor="#fff"/>-->
+
+            <!--  设置圆角-->
+            <!--<corners
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"/>-->
+            <corners android:radius="200dp" />
+
+            <!--  控制内部颜色-->
+            <solid
+                android:color="@color/video_play_editext_bg"/>
+
+            <!--控制内部字体距边线距离-->
+            <padding
+                android:bottom="5dp"
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp" />
+
+            <!--  控制线框颜色和宽度-->
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/view_line_color"/>
+        </shape>
+    </item>
+</selector>

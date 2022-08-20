@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E27668</color>
+    <color name="colorPrimaryDark">#E27668</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="default_dot">#BFBDBC</color>
+    <color name="guide_dot_select">#E27668</color>
+    <color name="main_bottom_default">#757575</color>
+    <color name="main_bottom_select">#E27668</color>
+    <color name="white">#ffffff</color>
+    <color name="dark">#000</color>
+    <color name="some_dark">#FFCECECE</color>
+    <color name="video_play_editext_bg">#F4F4F4</color>
+    <color name="video_play_edit">#FAFAFA</color>
+    <color name="view_line_color">#E7E7E7</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="bg_video_view">#80000000</color>
+    <color name="seek_background">#33ffffff</color>
+    <color name="seek_progress">#cce91e63</color>
+    <color name="seek_secondary_progress">#88f48fb1</color>
+
+</resources>

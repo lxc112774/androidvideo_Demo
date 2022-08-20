@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    tools:context=".main.MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <RelativeLayout
+                android:id="@+id/video_introduction"
+                android:background="@drawable/ripple_main_bottom_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/introduction_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="简介"
+                    android:textSize="15dp"
+                    android:textColor="@color/main_bottom_select"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_comment"
+                android:layout_width="0dp"
+                android:background="@drawable/ripple_main_bottom_bg"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/comment_liner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/video_comment_txt"
+                        android:textColor="@color/main_bottom_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评论 "
+                        android:textSize="15dp" />
+                    <TextView
+                        android:textColor="@color/main_bottom_default"
+                        android:id="@+id/video_comment_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.1万"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/video_tab_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/download_content_line" />
+
+</RelativeLayout>

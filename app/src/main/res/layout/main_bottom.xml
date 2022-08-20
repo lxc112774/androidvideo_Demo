@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:id="@+id/home_page"
+        android:layout_width="0dp"
+        android:background="@drawable/ripple_main_bottom_bg"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/home_img"
+                android:layout_width="@dimen/main_bottom_height_width"
+                android:layout_height="@dimen/main_bottom_height_width"
+                android:src="@drawable/home_img_select"/>
+            <TextView
+                android:id="@+id/home_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_bottom_home"
+                android:textSize="@dimen/main_bottom_text_size"
+                android:textColor="@color/main_bottom_select"
+                android:layout_marginTop="@dimen/main_bottom_text_margin_top"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kind_page"
+        android:layout_width="0dp"
+        android:background="@drawable/ripple_main_bottom_bg"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/kind_img"
+                android:layout_width="@dimen/main_bottom_height_width"
+                android:layout_height="@dimen/main_bottom_height_width"
+                android:src="@drawable/group_img"/>
+            <TextView
+                android:id="@+id/kind_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_bottom_group"
+                android:textSize="@dimen/main_bottom_text_size"
+                android:textColor="@color/main_bottom_default"
+                android:layout_marginTop="@dimen/main_bottom_text_margin_top"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/download_page"
+        android:layout_width="0dp"
+        android:background="@drawable/ripple_main_bottom_bg"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/download_img"
+                android:layout_width="@dimen/main_bottom_height_width"
+                android:layout_height="@dimen/main_bottom_height_width"
+                android:src="@drawable/download_img"/>
+            <TextView
+                android:id="@+id/download_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_bottom_download"
+                android:textColor="@color/main_bottom_default"
+                android:textSize="@dimen/main_bottom_text_size"
+                android:layout_marginTop="@dimen/main_bottom_text_margin_top"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

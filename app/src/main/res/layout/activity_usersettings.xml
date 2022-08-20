@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ripple_main_bottom_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="头像"
+                android:textColor="@color/dark"
+                android:textSize="17dp" />
+
+            <com.example.lxc.android_video.help.CircleImageView
+                android:id="@+id/hd_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/lxc" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/view_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nike_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple_main_bottom_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="昵称"
+                android:textColor="@color/dark"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/nike_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/jiantou2"
+                android:gravity="center"
+                android:text="sss"
+                android:textColor="@color/dark"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/jiantou2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/view_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple_main_bottom_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="性别"
+                android:textColor="@color/dark"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/sex_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/jiantou"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="@color/dark"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/jiantou"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/view_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple_main_bottom_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="地区"
+                android:textColor="@color/dark"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/jiantou3"
+                android:gravity="center"
+                android:text="南京"
+                android:textColor="@color/dark"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/jiantou3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/view_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qianming"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple_main_bottom_bg"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="签名"
+                android:textColor="@color/dark"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/qianming_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/jiantou4"
+                android:gravity="center"
+                android:text="快来留下你的签名吧"
+                android:textColor="@color/dark"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/jiantou4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/view_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_main_bottom_bg">
+
+            <Button
+                android:id="@+id/quit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ripple_registertab_btn"
+                android:text="退出"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

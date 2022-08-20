@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--播放控件 IjkVideoView -->
+    <include
+        android:id="@+id/play_view"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        layout="@layout/player_view">
+    </include>
+
+
+    <include layout="@layout/activity_video_navigation"></include>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/video_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

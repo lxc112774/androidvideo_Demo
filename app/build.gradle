@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "com.example.lxc.android_video"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //1.0.5 当1.1.0出现问题可以回退到1.0.5.1
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
+    //没有使用特殊Header，可以不加这行
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gson-2.1.jar')
+    //Volley,官方url链接下载
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    //视频播放
+    //compile 'cn.jzvd:jiaozivideoplayer:6.4.1'
+    //完整版引入
+    //compile 'com.shuyu:GSYVideoPlayer:6.0.1'
+    //完整版引入
+    //compile 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer:v2.0.5'
+    compile files('libs/fastjson-1.2.54.jar')
+
+    compile 'com.youth.banner:banner:1.4.10'  //最新版本
+
+    //bilibili开源播放器ijkplayer的使用
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+//    compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
+//    compile 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
+    compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+//    compile 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
+    compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
+
+}

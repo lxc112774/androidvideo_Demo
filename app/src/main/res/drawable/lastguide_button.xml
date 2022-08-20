@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--点击按钮背景 -->
+    <!--点击的变化-->
+    <item
+        android:state_pressed="true">
+        <shape>
+            <!--  控制内部颜色变化-->
+            <gradient
+                android:startColor="@color/white"
+                android:endColor="@color/white"/>
+
+            <!--  设置圆角-->
+            <!--<corners
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"/>-->
+            <corners android:radius="200dp" />
+
+            <!--  控制线框颜色和宽度-->
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/main_bottom_select"/>
+        </shape>
+    </item>
+
+
+    <!--点击前-->
+    <item>
+        <shape>
+            <!--  控制内部颜色从左向右变化-->
+           <!-- <gradient
+                android:startColor="#fff"
+                android:endColor="#fff"/>-->
+
+            <!--  设置圆角-->
+            <!--<corners
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"/>-->
+            <corners android:radius="200dp" />
+
+            <!--  控制内部颜色-->
+            <solid
+                android:color="@color/white"/>
+
+            <!--控制内部字体距边线距离-->
+            <padding
+                android:bottom="5dp"
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp" />
+
+            <!--  控制线框颜色和宽度-->
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/main_bottom_select"/>
+        </shape>
+    </item>
+</selector>

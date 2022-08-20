@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    tools:context=".main.MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/download_complete"
+                android:background="@drawable/ripple_main_bottom_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/complete_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已缓存"
+                    android:textSize="15dp"
+                    android:textColor="@color/main_bottom_select"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/download_nocomplete"
+                android:layout_width="0dp"
+                android:background="@drawable/ripple_main_bottom_bg"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:textColor="@color/main_bottom_default"
+                    android:id="@+id/no_complete_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="缓存中"
+                    android:textSize="15dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/tab_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/download_content_line" />
+
+</RelativeLayout>

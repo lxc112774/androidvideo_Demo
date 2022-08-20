@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:duration="300">
+    <!--缩放动画 -->
+    <scale
+        android:fromXScale="1.5"
+        android:fromYScale="1.5"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0"/>
+    <!--alpha是透明度,逐渐进入, 完全透明到完全不透明-->
+    <alpha android:fromAlpha="0"
+           android:toAlpha="1"/>
+</set>

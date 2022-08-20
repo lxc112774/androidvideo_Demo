@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="guide_button_margin_bottom">60dp</dimen>
+    <dimen name="guide_dot_margin_bottom">35dp</dimen>
+    <dimen name="main_bottom_height_width">25dp</dimen>
+    <dimen name="main_bottom_text_margin_top">3dp</dimen>
+    <dimen name="main_bottom_text_size">10dp</dimen>
+    <dimen name="home_head_lead">50dp</dimen>
+    <dimen name="video_item_size">12dp</dimen>
+    <dimen name="video_item_size_left">8dp</dimen>
+    <dimen name="aspect_btn_size">30dp</dimen>
+
+</resources>

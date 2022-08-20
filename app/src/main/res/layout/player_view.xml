@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@+id/fl_video_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/dark">
+
+        <com.example.lxc.android_video.ijkplayer.media.IjkVideoView
+            android:id="@+id/video_play_IjkVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.example.lxc.android_video.ijkplayer.media.IjkVideoView>
+
+
+        <include
+            layout="@layout/player_view_top_bar"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/fullscreen_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/set_video_bottom_controlbar_background"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/play_status"
+                android:src="@mipmap/ic_video_play"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <SeekBar
+                android:layout_gravity="center_vertical"
+                android:progressDrawable="@drawable/seekbar_drawable"
+                android:thumb="@drawable/seekbar_thumb"
+                android:id="@+id/seekbar"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:max="1000"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="2dp"
+                android:minHeight="2dp" />
+
+            <TextView
+                android:id="@+id/tv_current_time"
+                android:text="00:00"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text="/"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_total_time"
+                android:layout_marginRight="5dp"
+                android:text="00:00"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/iv_play_screen"
+                android:layout_marginRight="10dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_fullscreen"
+                android:layout_width="30sp"
+                android:layout_height="30sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_play_status"
+            android:src="@mipmap/ic_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/load_speed"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="正在加载..."/>
+
+        </LinearLayout>
+
+        <!--快进快退 or 声音 or 亮度-->
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_progress"
+            android:layout_gravity="center"
+            android:background="@color/bg_video_view"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_volume_on"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+    </FrameLayout>
+</RelativeLayout>

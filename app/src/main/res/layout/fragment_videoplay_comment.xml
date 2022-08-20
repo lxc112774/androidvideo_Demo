@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="全部热评"/>
+
+
+    <!--SwipeRefreshLayout可以实现下拉刷新-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/comment_swipe_refresh">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/play_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/comment_send"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/video_play_edit"
+        android:layout_height="50dp">
+        <com.example.lxc.android_video.help.CircleImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:id="@+id/comment_user_img"
+            android:layout_height="35dp"
+            android:src="@drawable/user_header"/>
+        <TextView
+            android:id="@+id/comment_edit"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/video_play_edit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="我来说几句"
+            android:textSize="12dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

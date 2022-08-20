@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/main_bottom_select"
+        android:layout_height="@dimen/home_head_lead">
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/cancle_txt"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/lastguide_button"
+            android:hint="搜索所有视频"
+            android:textSize="13dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/main_search_img"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/delete_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_close_gray"
+            android:layout_toLeftOf="@+id/cancle_txt"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/cancle_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

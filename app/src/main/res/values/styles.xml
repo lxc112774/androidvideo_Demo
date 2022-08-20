@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item><!--标题栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item><!--手机状态栏颜色-->
+        <item name="colorAccent">@color/colorAccent</item><!--选择状态颜色-->
+    </style>
+
+    <!--SplashActivity Theme-->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item> <!-- 透明背景 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!-- 自定义电量进度条 -->
+    <style name="ProgressBarBattery" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">52px</item>
+        <item name="android:layout_height">22px</item>
+        <item name="android:background">@mipmap/ic_battery</item>
+        <item name="android:paddingTop">4px</item>
+        <item name="android:paddingBottom">4px</item>
+        <item name="android:paddingLeft">4px</item>
+        <item name="android:paddingRight">8px</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/layer_battery_progress</item>
+    </style>
+
+    <!-- 屏幕宽高比选项 -->
+    <style name="AspectRatioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- 截图对话框 -->
+    <style name="AnimateDialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_zoom_out</item>
+    </style>
+
+
+    <!--带输入框Dialog-->
+    <style name="inputDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@color/transparent</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item><!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="android:windowSoftInputMode">stateAlwaysVisible</item><!--显示软件盘-->
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_select</item>
+    </style>
+
+
+</resources>

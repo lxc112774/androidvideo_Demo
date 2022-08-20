@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator">
+    <!--位移动画 -->
+    <translate
+        android:fromYDelta="60%"
+        android:toYDelta="0%"
+        android:duration="200"
+        />
+
+
+    <!--1、android:interpolator　－－加速器，非常有用的属性，可以简单理解为动画的速度，可以是越来越快，也可以是越来越慢，它有如下值：
+    @android:anim/accelerate_interpolator： 越来越快
+    @android:anim/decelerate_interpolator：越来越慢
+    @android:anim/accelerate_decelerate_interpolator：先快后慢
+    @android:anim/anticipate_interpolator: 先后退一小步然后向前加速
+    @android:anim/overshoot_interpolator：快速到达终点超出一小步然后回到终点
+    @android:anim/anticipate_overshoot_interpolator：到达终点超出一小步然后回到终点
+    @android:anim/bounce_interpolator：到达终点产生弹球效果，弹几下回到终点
+    @android:anim/linear_interpolator：均匀速度
+
+    2、android:duration －－动画运行时间，定义在多次时间（ms）内完成动画
+    3、android:startOffset　－－延迟一定时间后运行动画
+    4、fromXDelta　－－X轴方向开始位置，可以是%，也可以是具体的像素 具体见图
+    5、toXDelta　－－X轴方向结束位置，可以是%，也可以是具体的像素
+    6、fromYDelta　－－Y轴方向开始位置，可以是%，也可以是具体的像素,100%是最底部
+    7、toYDelta　－－Y轴方向结束位置，可以是%，也可以是具体的像素
+    -->
+
+    <!--android中提供了4中动画：
+        Alpha Animation 透明度动画效果
+        Scale Animation 缩放动画效果
+        Translate Animation 位移动画效果
+        Rotate Animation 旋转动画效果
+     -->
+</set>

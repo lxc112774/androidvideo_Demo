@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawelayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".main.MainActivity">
+    <!--这里一定要添加android:fitsSystemWindows="true"，是防止Activity的布局内容顶到了状态栏上去了-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/view_line_color"></View>
+
+        <include layout="@layout/main_bottom"></include>
+    </LinearLayout>
+
+    <!--会默认让第一个孩子作为主界面,第二个孩子变成菜单（要写layout_gravity="left"）-->
+    <include layout="@layout/left_menu"></include>
+
+</android.support.v4.widget.DrawerLayout>

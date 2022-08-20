@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lxc.android_video">
+
+    <!--添加访问网络的权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- for umeng -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Welcome"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".guide.GuideActivity">
+        </activity>
+
+        <activity android:name=".main.home.SearcherActivity">
+        </activity>
+
+        <activity android:name=".main.home.HistoryActivity">
+        </activity>
+
+        <activity android:name=".main.LoginRegister.LoginActivity">
+        </activity>
+
+        <activity android:name=".main.LoginRegister.RegisterActivity">
+        </activity>
+
+        <activity
+            android:name=".main.home.VideoPlayMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="nosensor"/>
+         <!-- or android:screenOrientation="landscape"-->
+
+
+        <activity android:name=".main.LoginRegister.UserSettingActivity">
+        </activity>
+
+        <!--从Android 7.0开始，一个应用提供自身文件给其它应用使用时，如果给出一个file://格式的URI的话，应用会抛出FileUriExposedException。这是由于谷歌认为目标app可能不具有文件权限，会造成潜在的问题。-->
+        <!--android7.0打开相机配置方法-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.lxc.android_video.opencamera"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+
+</manifest>
